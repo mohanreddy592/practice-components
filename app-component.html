@@ -7,4 +7,11 @@
     <my-button button-name="First Button" on-btn-click="$ctrl.showAlert()"></my-button>
     This is my second button 
     <my-button button-name="Second Button" on-btn-click="$ctrl.showConsole()"></my-button>
+
+    <slide-show show-title="Dogs" image-urls="$ctrl.dogsList" 
+        on-completed="$ctrl.dogSlideShowCompleted()"></slide-show>
+    <span ng-if="$ctrl.dogSlideshowCompleted">Dog slide show completed</span>
+    <slide-show show-title="Cats" image-urls="$ctrl.catsList" 
+        on-completed="$ctrl.catSlideShowCompleted()"></slide-show>
+    <span ng-if="$ctrl.catSlideshowCompleted">Cat slide show completed</span>
 </div>
